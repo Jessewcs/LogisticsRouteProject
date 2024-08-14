@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistics Route Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ab2155e76b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Find the Best Routes for Your Cargo</h1>
+        <p>Enter the details below to plan your shipment today!</p>
+        <form id="routeForm">
+            <div class="form-group">
+                <label for="origin">
+                    <i class="fas fa-map-marker-alt mr-2"></i>Origin
+                </label>
+                <input type="text" class="form-control" id="origin" name="origin" placeholder="Enter origin (E.g. Boston)" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">
+                    <i class="fas fa-map-pin mr-2"></i>Destination
+                </label>
+                <input type="text" class="form-control" id="destination" name="destination" placeholder="Enter destination (E.g. New York)" required>
+            </div>
+            <div class="form-group">
+                <label for="departureTime">
+                    <i class="fas fa-plane-departure mr-2"></i>Departure Time
+                </label>
+                <input type="time" class="form-control" id="departureTime" name="departureTime" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="calculateRoute">
+                <i class="fas fa-search mr-2"></i>Calculate Route
+            </button>
+        </form>
+        <div id="result" class="mt-4"></div>
+        <div id="map" style="height: 400px; width: 100%; margin-top: 20px;"></div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALPLc8gr9SlTQBe9Y1V_dA92e6W95QwmQ&callback=initMap" async defer></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

@@ -9,7 +9,7 @@ An innovative pathfinding application that enhances international logistics and 
 - Kavya Veeramony
 - Jesse Wojtanowicz
 
-## Project Presentation
+## Project Presentation 🎥
 [![Project Demo](https://img.youtube.com/vi/y-aEz7yoAkw/0.jpg)](https://www.youtube.com/watch?v=y-aEz7yoAkw)
 
 ## Key Features 🚀
